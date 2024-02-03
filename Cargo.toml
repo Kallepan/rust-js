@@ -1,8 +1,15 @@
 [package]
-name = "rust-js"
+name = "rust_js"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+swc = "0.272.7"
+tokio = { version = "1.36.0", features = ["full"] }
+swc_common = { version = "0.33.15", features = ["tty-emitter", "sourcemap"] }
+swc_ecma_parser = "0.142.1"
+structopt = "0.3.26"
+swc_ecma_ast = "0.111.1"
+v8 = "0.83.1"
